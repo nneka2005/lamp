@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="lamp.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="-9.016255883113335m 9.180097574723844m -3.1610492047695367m" data-normal="-0.5008045080376349m 0m -0.8655604223444964m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Plywood</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-9.08302289666759m 12.786917716264718m -2.9753818027235877m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Bulb</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-9.599971870899221m 7.690189566032481m -2.9169524279544565m" data-normal="-0.9959099733660421m 0m 0.09035112035857214m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">styled wood</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="-9.078151786112837m 4.4257378151891125m -2.8277022474102846m" data-normal="-0.8965818588739544m 0m 0.44287805357471105m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">₦300,000 </div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
